@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+/* ------------variables y estilos globales---------------------------------*/
+:root {
+    --btn-primary: #0d6efd;
+    --btn-primary-hover: #0d4dfd;
+}
+
+.btnPrimary {
+    color: white;
+    background-color: var(--btn-primary);
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnPrimary:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.inputGlobal {
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    color: var(--btn-primary);
+    padding-left: 15px;
+    cursor: pointer;
+    background-color: white;
+    height: 40px;
+}
+
+.inputGlobal:hover {
+    box-shadow: inset 0 0 0 2px var(--btn-primary-hover);
+}
+
+.inputGlobal::placeholder {
+    color: var(--btn-primary);
+}
+
+.titleH2 {
+    color: white;
+}
+
+.formGlobal {
+    padding: 20px 40px;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/*------------------container global y secciones--------------------------------*/
+.containerBurger {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.889);
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.btnBurger:focus:not(:focus-visible) {
+    outline: none;
+
+}
+
+.titleBurger {
+    padding-left: 80px;
+    font-size: 40px;
+}
+
+
+.container-global {
+    width: 100%;
+    display: flex;
+}
+
+.dropdown-content {
+    width: 300px;
+    background-color: black;
+    min-height: 100vh;
+}
+
+.containerWall {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.889);
+}
+
+/*-------------------formulario de busqueda---------------------------------------*/
+
+.formSearch-container {
+    padding: 5px;
+}
+
+.inputSearch.inputGlobal {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.btnSearch.btnPrimary {
+    width: 100%;
+}
+
+/*-------------------boton de zonas----------------------------------------------*/
+.btnZonas {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 2px rgb(255, 174, 0);
+    background-color: rgba(255, 174, 0, 0.77);
+}
+
+.btnZonas:hover {
+    background-color: rgb(255, 174, 0);
+}
+
+/*-------------------estilos del boton especies y  de bootstrap dropdown-------------*/
+
+.btnGrupoDrop {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.btn-especies {
+    width: 80%;
+    border: 0px;
+    color: white;
+    background-color: var(--btn-primary);
+}
+
+.btn-especies:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+.btn-animal {
+    width: 20%;
+    border: 2px solid var(--btn-primary-hover);
+    background-color: var(--btn-primary);
+    color: white;
+}
+
+.btn-animal:hover {
+    background-color: var(--btn-primary-hover);
+}
+
+/*--------------formulario de crear zonas y crear especies------------------------------------------------------*/
+.zonasGuardar.inputGlobal {
+    width: 70%;
+}
+
+.animalGuardar.inputGlobal {
+    width: 70%;
+}
+
+.btnZonasGuardar.btnPrimary {
+    width: 29%;
+}
+
+.btnAnimalGuardar.btnPrimary {
+    width: 29%;
+}
+
+#formZonas {
+    display: none;
+}
+
+#formAnimal {
+    display: none;
+}
+
+/*----------------------section formulario comentarios----------------------------------------------------------*/
+#sectionComentarios {
+    width: 90%;
+    /* background-color: aqua; */
+    min-height: 100vh;
+    margin: auto;
+    display: none;
+    padding: 0 20px;
+}
+
+.titleComentarios {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.formComentario {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.textareaComentario {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+    color: black;
+}
+
+textarea::placeholder {
+    color: var(--btn-primary-hover);
+}
+
+textarea:hover {
+    box-shadow: inset 0 0 0 2px var(--btn-primary-hover);
+}
+
+.containerAutorBtn {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.autorComentario.inputGlobal {
+    width: 95%;
+}
+
+.btnAnimalComentar.btnPrimary {
+    width: 95%;
+}
+
+/* -------------------container comentarios-----contenido dentro de la sectionComentarios--------------------------------------------------------*/
+
+.containerComentario {
+    width: 100%;
+}
+
+.cadaComentario {
+    margin-bottom: 20px;
+
+}
+
+.sectionComentario {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    word-wrap: break-word;
+
+    /* text-align: end; */
+
+}
+
+.liComentario {
+    width: 100%;
+    /* text-align: end; */
+    word-wrap: break-word;
+
+}
+
+
+
+.btnResponder.btnPrimary {
+    width: 28%;
+
+}
+
+
+.btnRespuestas.btnPrimary {
+    width: 28%;
+}
+
+.liComentarios {
+    color: yellow;
+}
+
+
+/*-------------------section respuestas------------------------------------------------------*/
+
+.respuestaComentario {
+    width: 100%;
+}
+
+.containerRespuesta {
+    margin-top: 15px;
+    width: 100%;
+    color: white;
+    /* border: 1px solid #0d4dfd; */
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.parrafoRespuesta {
+    width: 50%;
+    word-wrap: break-word;
+    text-align: end;
+
+}
+
+.liRespuesta {
+    color: yellow;
+}
+
+
+
+/*--------------container de buscador--------------------------------------------------------*/
+.containerSearch {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px 50px;
+    display: none;
+    background-color: black;
+    /* background-image: url("./images/tigre.jpg");
+    background-size: 100% 100%; */
+}
+
+.coincidencia {
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*--------------------responsive-------------------------------------------------------------*/
+
+
+@media (max-width:768px) {
+    .containerSearch {
+        width: 100%;
+        min-height: 100vh;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .titleComentarios {
+        font-size: 24px;
+    }
+
+    .dropdown-content {
+        display: none;
+        display: block;
+        position: fixed;
+        /* left:100%; */
+        left: -100%;
+        width: 100%;
+        padding: 0 20px;
+        transition: left 0.3s;
+    }
+
+    .aparecer {
+        left: 0;
+    }
+
+    .containerWall {
+        min-height: calc(100vh - 60px);
+    }
+
+
+    .containerBurger {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+
+    #btnBurger {
+        display: block;
+        color: white;
+        background: none;
+        border: none;
+        font-size: 40px;
+        padding: 0 20px;
+        cursor: pointer;
+    }
+
+    .navbar>.container-fluid {
+        display: block !important;
+    }
+
+    /*--------------formulario de crear zonas y crear especies------------------------------------------------------*/
+    .zonasGuardar.inputGlobal {
+        width: 100%;
+    }
+
+    .animalGuardar.inputGlobal {
+        width: 100%;
+    }
+
+    .btnZonasGuardar.btnPrimary {
+        width: 29%;
+        margin-top: 10px;
+    }
+
+    .btnAnimalGuardar.btnPrimary {
+        width: 29%;
+        margin-top: 10px;
+    }
+
+    /*------------------------------------------*/
+
+    .btnRespuestas.btnPrimary {
+        width: 34%;
+    }
+
+    .btnResponder.btnPrimary {
+        width: 34%;
+    }
+
+}
